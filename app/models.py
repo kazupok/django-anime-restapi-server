@@ -14,7 +14,7 @@ class UserData(models.Model):
     watched = models.ManyToManyField(AnimeData, related_name='watched_users')
 
 class CustomerReview(models.Model):
-    user = models.ForeignKey(UserData, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     anime = models.ForeignKey(AnimeData, on_delete=models.CASCADE)
     star = models.IntegerField()
     comment = models.TextField()

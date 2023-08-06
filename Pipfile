@@ -8,6 +8,9 @@ django = "*"
 django-environ = "*"
 dj-database-url = "*"
 djangorestframework = "*"
+django-cors-headers = "*"
+djoser = "*"
+djangorestframework-simplejwt = "*"
 
 [dev-packages]
 
